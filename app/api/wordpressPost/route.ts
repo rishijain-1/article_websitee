@@ -2,7 +2,7 @@
 import { NextResponse } from 'next/server';
 
 
-export async function GET(request: Request) {
+export async function GET() {
   try {
     const res = await fetch('https://blog.getgrahak.co/wp-json/wp/v2/posts?per_page=5');
     
